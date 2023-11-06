@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { ICON_CATEGORIES } from "./constants/icon_categories";
 
 const App = () => (
