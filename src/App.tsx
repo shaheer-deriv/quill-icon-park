@@ -1,13 +1,11 @@
 import "./App.scss";
-import { ICON_CATEGORIES } from "./constants/icon_categories";
+import Body from "./components/body/body";
+import Header from "./components/header/header";
 
 const App = () => (
-  <div>
-    <div>
-      {ICON_CATEGORIES.map((category) => (
-        <div key={category}>{category}</div>
-      ))}
-    </div>
+  <div className="flex flex-col text-gray-700">
+    <Header />
+    <Body />
   </div>
 );
 
