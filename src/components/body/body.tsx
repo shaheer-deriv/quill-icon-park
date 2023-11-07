@@ -1,10 +1,10 @@
-import * as QuillIcons from "@deriv/quill-icons";
+import IconsBrowser from "../icons-browser/icons-browser";
+import IconDetails from "../icon-details/icon-details";
 
-const x = Object.keys(QuillIcons);
 const Body = () => (
   <div className="w-full grid grid-cols-[3fr_1fr]">
-    <div>{x}</div>
-    <div>right</div>
+    <IconsBrowser />
+    <IconDetails />
   </div>
 );
 
