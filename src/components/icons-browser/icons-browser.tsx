@@ -12,7 +12,7 @@ const IconsBrowser = () => {
           <IconEntry
             key={iconName}
             iconName={iconName}
-            icon={
+            Icon={
               icon as React.ForwardRefExoticComponent<
                 Omit<QuillIcons.QuillSvgProps, "ref">
               >

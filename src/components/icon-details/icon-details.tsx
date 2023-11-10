@@ -4,7 +4,7 @@ import { IconContext } from "../../context/context";
 const IconDetails = () => {
   const iconContext = useContext(IconContext);
   const iconSelected = iconContext?.iconSelected;
-  const Icon = iconSelected?.icon;
+  const Icon = iconSelected?.Icon;
 
   return (
     <div className="pr-8 pt-8">

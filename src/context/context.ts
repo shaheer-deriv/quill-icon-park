@@ -3,7 +3,7 @@ import { Dispatch, SetStateAction, createContext } from "react";
 
 export type TIconEntry = {
   iconName: string;
-  icon: React.ForwardRefExoticComponent<Omit<QuillSvgProps, "ref">>;
+  Icon: React.ForwardRefExoticComponent<Omit<QuillSvgProps, "ref">>;
 };
 export type TIconContext = {
   iconSelected?: TIconEntry;
