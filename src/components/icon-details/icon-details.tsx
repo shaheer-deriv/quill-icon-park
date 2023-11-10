@@ -11,7 +11,7 @@ const IconDetails = () => {
       <div className="sticky top-28 flex flex-col gap-4 rounded-xl p-4 shadow-xl">
         Icon Details
         <div className="flex items-center justify-center">
-          <Icon />
+          {Icon && <Icon />}
         </div>
       </div>
     </div>
