@@ -9,7 +9,15 @@ const IconsBrowser = () => {
       {iconNames
         .filter(([iconName, _]) => iconName.endsWith("Icon"))
         .map(([iconName, icon]) => (
-          <IconEntry key={iconName} iconName={iconName} icon={icon} />
+          <IconEntry
+            key={iconName}
+            iconName={iconName}
+            icon={
+              icon as React.ForwardRefExoticComponent<
+                Omit<QuillIcons.QuillSvgProps, "ref">
+              >
+            }
+          />
         ))}
     </div>
   );

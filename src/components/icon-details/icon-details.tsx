@@ -1,13 +1,21 @@
-import { DerivProductDerivBotBlackLogoWordmarkHorizontalIcon } from "@deriv/quill-icons";
+import { useContext } from "react";
+import { IconContext } from "../../context/context";
 
-const IconDetails = () => (
-  <div className="p-8">
-    <div className="shadow-xl rounded-xl p-4 sticky top-24 flex flex-col gap-4">
-      Icon Details
+const IconDetails = () => {
+  const iconContext = useContext(IconContext);
+  const iconSelected = iconContext?.iconSelected;
+  const Icon = iconSelected?.icon;
 
-      <DerivProductDerivBotBlackLogoWordmarkHorizontalIcon/>
+  return (
+    <div className="pr-8 pt-8">
+      <div className="sticky top-28 flex flex-col gap-4 rounded-xl p-4 shadow-xl">
+        Icon Details
+        <div className="flex items-center justify-center">
+          {Icon && <Icon />}
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default IconDetails;
